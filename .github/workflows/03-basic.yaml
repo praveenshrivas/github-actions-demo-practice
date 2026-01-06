@@ -11,9 +11,8 @@ on:
       - main
       - test
 
-  jobs: 
-    runs-on: ubuntu-latest
-
-    steps: 
-      - name: First Step
-        run: echo "Hello World!!!!"
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: First Step
+      run: echo "Hello World!!!!"
