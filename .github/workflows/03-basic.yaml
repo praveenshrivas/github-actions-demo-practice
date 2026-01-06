@@ -1,0 +1,20 @@
+name: Third Workflow.
+
+on: 
+  workflow_dispatch:
+  push:
+    branches: 
+      - main
+      - test
+  pull_request:
+    branches: 
+      - main
+      - test
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step
+        run: echo "Hello World!!!!"
+      - run: echo "Hello There!!!"
