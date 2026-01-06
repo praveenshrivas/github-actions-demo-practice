@@ -1,7 +1,9 @@
-name: This is the first workflow 
+name: This is the first workflow.
+
 on:
-  workflow_dispatch
-job:
+  workflow_dispatch:
+
+jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps: 
