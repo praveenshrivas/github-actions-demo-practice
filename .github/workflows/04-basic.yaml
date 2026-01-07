@@ -9,6 +9,7 @@ on:
       - test
     paths:
       - ".github/workflows/04-basic.yaml"
+      - "**/*.py"
   pull_request: 
     branches: 
       - main
