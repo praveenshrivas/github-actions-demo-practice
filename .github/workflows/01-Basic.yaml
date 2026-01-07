@@ -1,3 +1,7 @@
+# workflow_dispatch allows you to manually trigger a GitHub Actions workflow from the GitHub UI (or via API).
+# No push.
+# No PR.
+# You decide when to run it.
 name: This is the first workflow.
 
 on:
