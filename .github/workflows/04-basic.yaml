@@ -7,6 +7,8 @@ on:
     branches:
       - main
       - test
+    paths:
+      - ".github/workflows/04-basic.yaml"
   pull_request: 
     branches: 
       - main
