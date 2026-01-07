@@ -1,0 +1,20 @@
+# This is the comment for the workflow explanation I will Keep it line by line. 
+name: Script 04 - Basic workflow 
+
+on:
+  workflow_dispatch: 
+  push:
+    branches:
+      - main
+      - test
+  pull_request: 
+    branches: 
+      - main
+      - test
+
+jobs: 
+  hello-world:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: this is the first step.
+        run: echo "Hello World!!!"
