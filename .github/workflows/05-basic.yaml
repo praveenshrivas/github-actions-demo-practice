@@ -1,0 +1,23 @@
+name: This will include everything of the first four workflows. 
+
+on: 
+  workflow_dispatch: 
+  push: 
+    branches:
+      - master
+      - test
+    paths: 
+      - ".github/workflows/05-basic.yaml"
+      - "**/*.py"
+  pull_request:
+    branches: 
+      - master
+      - test
+
+jobs: 
+  hello-world: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: this is the step one. 
+        run: echo "Hello World"
+      - run: echo "Hello Github Actions"
